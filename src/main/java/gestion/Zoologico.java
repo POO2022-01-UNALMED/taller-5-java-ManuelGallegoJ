@@ -14,9 +14,9 @@ public class Zoologico {
 		this.ubicacion = ubicacion;
 	}
 	
-	public void agregarZonas(Zona zona) {
-		zona.setZoo(this);
-		zonas.add(zona);
+	public void agregarZonas(Zona nuevaZona) {
+		nuevaZona.setZoo(this);
+		zonas.add(nuevaZona);
 	}
 	
 	public int cantidadTotalAnimales() {
@@ -26,28 +26,24 @@ public class Zoologico {
 		}
 		return totalAnimales;
 	}
-
+	
 	public String getNombre() {
-		return nombre;
+		return this.nombre;
 	}
-
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	
 	public String getUbicacion() {
-		return ubicacion;
+		return this.ubicacion;
 	}
-
+	
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
-
-	public List<Zona> getZonas() {
-		return zonas;
-	}
-
-	public void setZonas(List<Zona> zonas) {
-		this.zonas = zonas;
+	
+	public List<Zona> getZona() {
+		return this.zonas;
 	}
 }
